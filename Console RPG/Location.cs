@@ -9,12 +9,12 @@ namespace Console_RPG
      public static Location beach = new Location("beach", " its oddly calming  \n  the only place you can to go (other than the ocean) is the street behind you");
      public static Location street = new Location("street", "looks perfect for a fight", new Battle(new List<Enemy>() { Enemy.slime, Enemy.slime2, Enemy.gremlin }));
      public static Location ocean = new Location("ocean", "I guess im gonna take a swim");
-     public static Location park = new Location("park", "Reminds me of better times, I think im gonna go on the swings!");
+     public static Location park = new Location("park", "Reminds me of better times, I think im gonna go on the swings!", new Battle(new List<Enemy> { Enemy.angrypup}));
      public static Location restaurant = new Location("restaurant", "looks tasty!", new Shop("Tasty eats", new List<Item>() { Item.potionI, Item.potionII, }));
      public static Location morestreet = new Location("more street", "more street so more to explore", new Battle(new List<Enemy>() { Enemy.angrypup}));
      public static Location coffeeshop = new Location("coffee shop", "ohhhh I wanna get somthing to drink!", new Shop("Hidden armory", new List<Item>() { Armor.BetterArmor, Weapon.BetterSword }));
-     public static Location library = new Location("library", "I was just hoping to find a new read!");
-     public static Location tower = new Location("tower", "Hrmm most likely worth exploring");
+     public static Location library = new Location("library", "I was just hoping to find a new read!", new Battle(new List<Enemy> { Enemy.gremlin} ));
+     public static Location tower = new Location("tower", "Hrmm most likely worth exploring,  Its recomended to have 100$ before entering, but its not necessary");
      public static Location towerending = new Location("tower's end", "seems climatic", new Battle(new List<Enemy>() { Enemy.BigBad}));
         public static Location gamesend = new Location("safty", "It seems my jouny has been compleat, I feel compleld to close the game");
 
